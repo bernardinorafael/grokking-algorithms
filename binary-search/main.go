@@ -30,16 +30,16 @@ func BinarySearch(arr []Person, name string) string {
 
 	for low <= high {
 		mid := (low + high) / 2
-		target := arr[mid]
+		guess := arr[mid]
 
 		// in each iteration, we will compare the exact middle
 		// item with the item we are performing the binary search on
-		if target.name == name {
-			return fmt.Sprintf("found %s, age %d", target.name, target.age)
+		if guess.name == name {
+			return fmt.Sprintf("found %s, age %d", guess.name, guess.age)
 		}
-		// if the `mid` value is less than the target(name)
+		// if the `mid` value is less than the guess(name)
 		// we continue the search in the upper half
-		if target.name < name {
+		if guess.name < name {
 			// where `low` takes the value of mid + 1
 			low = mid + 1
 		} else {
