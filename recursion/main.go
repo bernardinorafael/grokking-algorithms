@@ -4,10 +4,16 @@ import "fmt"
 
 func main() {
 	for i := range 10 {
-		fmt.Printf("Result(%d) = %d\n", i+1, fibonacci(i+1))
+		fmt.Printf("Result(%d) = %d\n", i, fibonacci(i))
 	}
-
 }
+
+/*
+* Fibonacci
+* F(0) = 0
+* F(1) = 1
+* F(n) = F(n-1) + F(n-2)
+ */
 
 func fibonacci(n int) int {
 	// base case
