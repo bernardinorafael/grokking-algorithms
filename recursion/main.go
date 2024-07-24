@@ -13,6 +13,19 @@ func main() {
 	for i := range 10 {
 		fmt.Printf("Result(%d) = %d\n", i, fibonacci(i))
 	}
+
+	/*
+	* Result(0) = 0
+	* Result(1) = 1
+	* Result(2) = 1
+	* Result(3) = 2
+	* Result(4) = 3
+	* Result(5) = 5
+	* Result(6) = 8
+	* Result(7) = 13
+	* Result(8) = 21
+	* Result(9) = 34
+	 */
 }
 
 func fibonacci(n int) int {
